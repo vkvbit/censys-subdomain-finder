@@ -1,3 +1,11 @@
+## How is it different from original tool ?
+Ans:- I was working on a project, I needed to take output of this tool one by one for further operation. It was not possible with original tool. So, i edited it.
+
+How to save output:
+```
+python3 censys-subdomain-finder.py {domain} > output.txt
+```
+
 # Censys subdomain finder
 
 This is a tool to enumerate subdomains using the Certificate Transparency logs stored by [Censys](https://censys.io). It should return any subdomain who has ever been issued a SSL certificate by a public CA.
@@ -5,53 +13,50 @@ This is a tool to enumerate subdomains using the Certificate Transparency logs s
 See it in action:
 
 ```shell
-$ python censys-subdomain-finder.py github.com
+$ python3 censys-subdomain-finder.py github.com
 
-[*] Searching Censys for subdomains of github.com
-[*] Found 42 unique subdomains of github.com in ~1.7 seconds
-
-  - hq.github.com
-  - talks.github.com
-  - cla.github.com
-  - github.com
-  - cloud.github.com
-  - enterprise.github.com
-  - help.github.com
-  - collector-cdn.github.com
-  - central.github.com
-  - smtp.github.com
-  - cas.octodemo.github.com
-  - schrauger.github.com
-  - jobs.github.com
-  - classroom.github.com
-  - dodgeball.github.com
-  - visualstudio.github.com
-  - branch.github.com
-  - www.github.com
-  - edu.github.com
-  - education.github.com
-  - import.github.com
-  - styleguide.github.com
-  - community.github.com
-  - server.github.com
-  - mac-installer.github.com
-  - registry.github.com
-  - f.cloud.github.com
-  - offer.github.com
-  - helpnext.github.com
-  - foo.github.com
-  - porter.github.com
-  - id.github.com
-  - atom-installer.github.com
-  - review-lab.github.com
-  - vpn-ca.iad.github.com
-  - maintainers.github.com
-  - raw.github.com
-  - status.github.com
-  - camo.github.com
-  - support.enterprise.github.com
-  - stg.github.com
-  - rs.github.com
+hq.github.com
+talks.github.com
+cla.github.com
+github.com
+cloud.github.com
+enterprise.github.com
+help.github.com
+collector-cdn.github.com
+central.github.com
+smtp.github.com
+cas.octodemo.github.com
+schrauger.github.com
+jobs.github.com
+classroom.github.com
+dodgeball.github.com
+visualstudio.github.com
+branch.github.com
+www.github.com
+edu.github.com
+education.github.com
+import.github.com
+styleguide.github.com
+community.github.com
+server.github.com
+mac-installer.github.com
+registry.github.com
+f.cloud.github.com
+offer.github.com
+helpnext.github.com
+foo.github.com
+porter.github.com
+id.github.com
+atom-installer.github.com
+review-lab.github.com
+vpn-ca.iad.github.com
+maintainers.github.com
+raw.github.com
+status.github.com
+camo.github.com
+support.enterprise.github.com
+stg.github.com
+rs.github.com
 
 ```
 
